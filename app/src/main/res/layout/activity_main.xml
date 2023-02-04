@@ -8,12 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/pikachu" />
-
     <Button
         android:id="@+id/msjbienvenida"
         android:layout_width="wrap_content"
@@ -21,6 +15,23 @@
         android:onClick="btn_bienvenida"
         android:text="ACEPTAR"
         android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnenviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="validar"
+        android:text="Enviar Datos" />
 
 
 </LinearLayout>
